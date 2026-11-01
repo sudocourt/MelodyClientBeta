@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "melody",
+  "version": "1.0.0",
+  "name": "Melody",
+  "description": "Smooth and optimized custom client",
+  "authors": [
+    "Qluwara"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "client",
+  "accessWidener": "earthhack.accesswidener",
+  "entrypoints": {
+    "preLaunch": [
+      "me.earth.earthhack.impl.core.Core"
+    ],
+    "client": [
+      "me.earth.earthhack.impl.Earthhack"
+    ]
+  },
+  "mixins": [
+    "mixins.earth.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.2",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
